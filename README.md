@@ -49,7 +49,7 @@ Neste curso, você explorará:
 }).toString()
 -->
 
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?owner=&template_name=secure-repository-supply-chain&template_owner=skills&name=skills-secure-repository-supply-chain&visibility=public)
+[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=dev-pods&template_name=secure-repository-supply-chain&owner=%40me&name=secure-repository-supply-chain&description=GitHub+Habilidades:+Introdução+para+Supply+Chain&visibility=public)
 
 1. Clique com o botão direito em **Iniciar curso** e abra o link em uma nova aba.
 2. Na nova aba, a maioria dos prompts será preenchida automaticamente para você.
@@ -67,8 +67,8 @@ Neste curso, você explorará:
 
 ---
 
-Get help: [Post in our discussion board](https://github.com/skills/.github/discussions) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+Obter ajuda: [Poste em nosso fórum de discussão](https://github.com/skills/.github/discussions) &bull; [Revise a página de status do GitHub](https://www.githubstatus.com/)
 
-&copy; 2024 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+&copy; 2025 GitHub &bull; [Código de Conduta](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
 
 </footer>
