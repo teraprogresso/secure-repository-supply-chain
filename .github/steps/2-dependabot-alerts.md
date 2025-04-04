@@ -1,46 +1,46 @@
-## Step 2: Enable and view Dependabot alerts
+## Passo 2: Habilitar e visualizar alertas do Dependabot
 
-_Nice work! :tada: You added and viewed a dependency using Dependency graph!_
+_Bom trabalho! :tada: Você adicionou e visualizou uma dependência usando o gráfico de dependências!_
 
-Given how many dependencies our repository uses, maintaining them needs to become an automated task. Keeping our code secure is a top priority, so the first thing we need to do is set up a way to be notified when a dependency we are using is vulnerable or malware. We can do this by enabling Dependabot alerts.
+Dado o número de dependências que nosso repositório utiliza, manter essas dependências precisa se tornar uma tarefa automatizada. Manter nosso código seguro é uma prioridade, então a primeira coisa que precisamos fazer é configurar uma forma de sermos notificados quando uma dependência que estamos usando é vulnerável ou contém malware. Podemos fazer isso habilitando alertas do Dependabot.
 
-**What are Dependabot alerts?**: Dependabot alerts tell you that your code depends on a package that is insecure. These Dependabot alerts reference the [GitHub Advisory Database](https://github.com/advisories), which contains a list of known security vulnerabilities and malware, grouped in two categories: **GitHub reviewed advisories** and **unreviewed advisories**.
+**O que são alertas do Dependabot?**: Alertas do Dependabot informam que seu código depende de um pacote inseguro. Esses alertas do Dependabot referenciam a [Base de Dados de Consultoria do GitHub](https://github.com/advisories), que contém uma lista de vulnerabilidades de segurança e malware conhecidos, agrupados em duas categorias: **Consultorias revisadas pelo GitHub** e **Consultorias não revisadas**.
 
-If your code depends on a package that has a security vulnerability, this can cause a range of problems for your project or the people who use it. You should upgrade to a secure version of the package as soon as possible. If your code uses malware, you need to replace the package with a secure alternative.
+Se seu código depende de um pacote que tem uma vulnerabilidade de segurança, isso pode causar uma série de problemas para o seu projeto ou para as pessoas que o utilizam. Você deve atualizar para uma versão segura do pacote o mais rápido possível. Se seu código utiliza malware, você precisa substituir o pacote por uma alternativa segura.
 
-Let's try this out with our newly added `follow-redirects` dependency!
+Vamos testar isso com nossa recém-adicionada dependência `follow-redirects`!
 
-### :keyboard: Activity 2.1: View security advisories in the GitHub Advisory Database
+### :keyboard: Atividade 2.1: Visualizar consultorias de segurança na Base de Dados de Consultoria do GitHub
 
-1. Navigate to [GitHub Advisory Database](https://github.com/advisories).
-1. Type or paste `follow-redirects` into the advisory search box.
-1. Click on any of the advisories that were found to see more information.
-1. You'll see the packages, impact, patches, workaround, and references for the advisory.
+1. Navegue até a [Base de Dados de Consultoria do GitHub](https://github.com/advisories).
+2. Digite ou cole `follow-redirects` na caixa de pesquisa de consultorias.
+3. Clique em qualquer uma das consultorias encontradas para ver mais informações.
+4. Você verá os pacotes, impacto, patches, soluções alternativas e referências para a consultoria.
 
-Notice the long list of advisories for our dependency! This can look scary but it's actually a good thing. It means that our dependency is actively being maintained and patches are being pushed to remove the vulnerability. If we had Dependabot alerts enabled, we could receive alerts when we need to update a dependency and act promptly to secure them.
+Observe a longa lista de consultorias para nossa dependência! Isso pode parecer assustador, mas na verdade é uma coisa boa. Significa que nossa dependência está sendo ativamente mantida e patches estão sendo disponibilizados para remover a vulnerabilidade. Se tivéssemos alertas do Dependabot habilitados, poderíamos receber alertas quando precisássemos atualizar uma dependência e agir prontamente para protegê-la.
 
-Let's enable Dependabot alerts on our repository!
+Vamos habilitar alertas do Dependabot em nosso repositório!
 
-### :keyboard: Activity 2.2: Enable Dependabot alerts
+### :keyboard: Atividade 2.2: Habilitar alertas do Dependabot
 
-1. Navigate to the **Settings** tab.
-1. Display the settings for **Code security and analysis**.
-1. **Enable** Dependabot alerts.
-1. **Wait about 60 seconds for Dependabot to check for alerts.**
-1. Navigate to the **Security** tab.
-1. Under "Vulnerability alerts" in the side bar, select **Dependabot** to view a list of the Dependabot alerts for the default branch.
+1. Navegue até a aba **Configurações**.
+2. Exiba as configurações para **Segurança e análise de código**.
+3. **Habilite** alertas do Dependabot.
+4. **Aguarde cerca de 60 segundos para o Dependabot verificar se há alertas.**
+5. Navegue até a aba **Segurança**.
+6. Em "Alertas de vulnerabilidade" na barra lateral, selecione **Dependabot** para visualizar uma lista dos alertas do Dependabot para a branch padrão.
 
-Dependabot has alerted us to vulnerabilities in the dependencies that we use. We can also use Dependabot to help us address these vulnerabilities by creating pull requests to update the dependency to a safe version.
+O Dependabot nos alertou sobre vulnerabilidades nas dependências que usamos. Também podemos usar o Dependabot para nos ajudar a resolver essas vulnerabilidades criando pull requests para atualizar a dependência para uma versão segura.
 
-Let's see how this would work by using Dependabot to create a pull request for one of the alerts!
+Vamos ver como isso funcionaria usando o Dependabot para criar um pull request para um dos alertas!
 
-### :keyboard: Activity 2.3: Create a pull request based on a Dependabot alert
+### :keyboard: Atividade 2.3: Criar um pull request com base em um alerta do Dependabot
 
-1. In the list of Dependabot alerts, click the "Prototype Pollution in minimist" to display more information.
-1. Click the **Create Dependabot security update** button to create a pull request to update the dependency. This could take up to 2 minutes.
-1. When the pull request is open, the alert page is updated to show a **Review security update** button.
-1. Click the **Review security update** button to display the pull request.
-   - You can view the pull request and **Files changed** tab to review the update.
-1. Navigate back to the **Conversation** tab and merge the pull request.
+1. Na lista de alertas do Dependabot, clique em "Prototype Pollution in minimist" para exibir mais informações.
+2. Clique no botão **Criar atualização de segurança do Dependabot** para criar um pull request para atualizar a dependência. Isso pode levar até 2 minutos.
+3. Quando o pull request estiver aberto, a página de alerta será atualizada para mostrar um botão **Revisar atualização de segurança**.
+4. Clique no botão **Revisar atualização de segurança** para exibir o pull request.
+   - Você pode visualizar o pull request e a aba **Arquivos alterados** para revisar a atualização.
+5. Navegue de volta para a aba **Conversação** e faça o merge do pull request.
 
-Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to display the next step.
+Espere cerca de 20 segundos e então atualize esta página (a página onde você está seguindo as instruções). [GitHub Actions](https://docs.github.com/en/actions) será atualizado automaticamente para exibir o próximo passo.
