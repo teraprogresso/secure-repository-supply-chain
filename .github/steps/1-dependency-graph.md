@@ -1,49 +1,49 @@
-## Step 1: Review and add dependencies using dependency graph
+## Passo 1: Revisar e adicionar dependências usando o gráfico de dependências
 
-_Welcome to "Secure your repository's supply chain"! :wave:_
+_Bem-vindo ao "Proteja a cadeia de suprimentos do seu repositório"! :wave:_
 
-**What's the big deal about securing your repository's supply chain?**: With the accelerated use of open source, most projects depend on hundreds of open-source dependencies. This poses a security problem: what if the dependencies you're using are vulnerable? You could be putting your users at risk of a supply chain attack. One of the most important things you can do to protect your supply chain is to patch your vulnerable dependencies and replace any malware.
+**Qual é a importância de proteger a cadeia de suprimentos do seu repositório?**: Com o uso acelerado de código aberto, a maioria dos projetos depende de centenas de dependências de código aberto. Isso representa uma questão de segurança [...]
 
-GitHub offers a range of features to help you understand the dependencies in your environment, know about vulnerabilities in those dependencies, and patch them. The supply chain features on GitHub are:
+O GitHub oferece uma série de recursos para ajudá-lo a entender as dependências em seu ambiente, conhecer as vulnerabilidades dessas dependências e corrigi-las. Os recursos da cadeia de suprimentos no GitHub incluem:
 
-- Dependency graph
-- Dependency review
-- Dependabot alerts
-- Dependabot updates
-  - Dependabot security updates
-  - Dependabot version updates
+- Gráfico de dependências
+- Revisão de dependências
+- Alertas do Dependabot
+- Atualizações do Dependabot
+  - Atualizações de segurança do Dependabot
+  - Atualizações de versão do Dependabot
 
-**What is a dependency graph**: The dependency graph is a summary of the manifest and lock files stored in a repository and any dependencies that are submitted for the repository using the dependency submission API (beta). For each repository, it shows:
+**O que é um gráfico de dependências**: O gráfico de dependências é um resumo dos arquivos de manifesto e de bloqueio armazenados em um repositório e quaisquer dependências que são submetidas ao repositório usando o Depend[...]
 
-- Dependencies, the ecosystems and packages it depends on
-- Dependents, the repositories and packages that depend on it
+- Dependências, os ecossistemas e pacotes dos quais depende
+- Dependentes, os repositórios e pacotes que dependem dele
 
-### :keyboard: Activity 1.1: Verify that dependency graph is enabled
+### :keyboard: Atividade 1.1: Verificar se o gráfico de dependências está habilitado
 
-**We recommend opening another browser tab to work through the following activities so you can keep these instructions open for reference.**
+**Recomendamos abrir outra aba do navegador para realizar as atividades a seguir, assim você pode manter estas instruções abertas para referência.**
 
-Dependency graph is enabled by default for all new public repositories. If you're working in a public repository, you can go straight to "Activity 1.2: Add a new dependency and view your dependency graph." For private or internal repositories, you'll need to enable Dependency graph.
+O gráfico de dependências está habilitado por padrão para todos os novos repositórios públicos. Se você estiver trabalhando em um repositório público, pode ir direto para "Atividade 1.2: Adicionar uma nova dependência e visualizar seu gráfico de dependências".
 
-1. Navigate to the **Settings** tab.
-1. Click **Code security and analysis**.
-1. **Enable** "Dependency graph." 
+1. Navegue até a aba **Configurações**.
+2. Clique em **Segurança e análise de código**.
+3. **Habilite** "Gráfico de dependências".
 
-### :keyboard: Activity 1.2: Add a new dependency and view your dependency graph
+### :keyboard: Atividade 1.2: Adicionar uma nova dependência e visualizar seu gráfico de dependências
 
-1. Navigate to the **Code** tab and locate the `code/src/AttendeeSite` folder.
-1. Add the following content to the `package-lock.json` file after the third to last bracket `}` and before the last two brackets.
-   ```
-   ,
-    "follow-redirects": {
-      "version": "1.14.1",
-      "resolved": "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.1.tgz",
-      "integrity": "sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg=="
-    }
-   ```
-1. Navigate to the **Insights** tab.
-1. Select **Dependency graph** from the side navigation bar.
-1. Review all the dependencies on the **Dependencies** tab.
-1. Search for `follow-redirects` and review the new dependency you just added.
-   ![Screen Shot showing the "follow-redirects" dependency.](https://user-images.githubusercontent.com/6351798/196288729-734e3319-c5d7-4f35-a19c-676c12f0e27d.png)
+1. Navegue até a aba **Código** e localize a pasta `code/src/AttendeeSite`.
+2. Adicione o seguinte conteúdo ao arquivo `package-lock.json` após a terceira chave `}` antes das duas últimas chaves.
+    ```
+    ,
+     "follow-redirects": {
+       "version": "1.14.1",
+       "resolved": "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.1.tgz",
+       "integrity": "sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg=="
+     }
+    ```
+3. Navegue até a aba **Insights**.
+4. Selecione **Gráfico de dependências** na barra de navegação lateral.
+5. Revise todas as dependências na aba **Dependências**.
+6. Pesquise por `follow-redirects` e revise a nova dependência que você acabou de adicionar.
+    ![Captura de tela mostrando a dependência "follow-redirects".](https://user-images.githubusercontent.com/6351798/196288729-734e3319-c5d7-4f35-a19c-676c12f0e27d.png)
 
-Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to display the next step.
+Espere cerca de 20 segundos e então atualize esta página (a página onde você está seguindo as instruções). [GitHub Actions](https://docs.github.com/en/actions) será atualizado automaticamente para exibir o próximo passo.
