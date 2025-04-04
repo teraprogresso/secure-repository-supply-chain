@@ -1,18 +1,18 @@
-## Step 3: Enable and trigger Dependabot security updates
+## Passo 3: Habilitar e acionar atualizações de segurança do Dependabot
 
-_Nice work enabling, viewing, and creating Dependabot alerts :sparkles:_
+_Bom trabalho habilitando, visualizando e criando alertas do Dependabot :sparkles:_
 
-Enabling Dependabot alerts on our repository was a great step toward improving our code security, but we still had to manually select an alert and then manually select the option to create the pull request. It would be nice to further improve the automation and maintenance of our dependencies! Well, with Dependabot security updates, we can do just that.
+Habilitar alertas do Dependabot no nosso repositório foi um ótimo passo para melhorar a segurança do nosso código, mas ainda tivemos que selecionar manualmente um alerta e depois selecionar manualmente a opção de criar o pull request. Seria bom melhorar ainda mais a automação e manutenção de nossas dependências! Bem, com as atualizações de segurança do Dependabot, podemos fazer exatamente isso.
 
-**What are Dependabot security updates?**: When this feature is enabled, Dependabot detects *and* fixes vulnerable dependencies for you by opening pull requests automatically to resolve Dependabot alerts.
+**O que são atualizações de segurança do Dependabot?**: Quando este recurso está habilitado, o Dependabot detecta *e* corrige dependências vulneráveis para você, abrindo pull requests automaticamente para resolver alertas do Dependabot.
 
-We manually created a pull request to fix the "Prototype Pollution in minimist" alert, but let's enable Dependabot security updates to automate this process for future alerts!
+Criamos manualmente um pull request para corrigir o alerta "Prototype Pollution in minimist", mas vamos habilitar atualizações de segurança do Dependabot para automatizar esse processo para futuros alertas!
 
-### :keyboard: Activity 3.1: Enable and trigger Dependabot security updates
+### :keyboard: Atividade 3.1: Habilitar e acionar atualizações de segurança do Dependabot
 
-1. Navigate to the **Settings** tab and select **Code security and analysis**.
-1. Enable Dependabot security updates. You may need to wait 30-60 seconds before you see any new pull requests.
-1. Navigate to the **Pull requests** repository tab and select the newly created pull request that updates axios from version 0.21.1 to a patched version.
-1. Review and merge the pull request.
+1. Navegue até a aba **Configurações** e selecione **Segurança e análise de código**.
+2. Habilite atualizações de segurança do Dependabot. Pode ser necessário esperar de 30 a 60 segundos antes de ver novos pull requests.
+3. Navegue até a aba **Pull requests** do repositório e selecione o pull request recém-criado que atualiza o axios da versão 0.21.1 para uma versão corrigida.
+4. Revise e faça o merge do pull request.
 
-Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update this page to display the next step.
+Espere cerca de 20 segundos e então atualize esta página (a página onde você está seguindo as instruções). [GitHub Actions](https://docs.github.com/en/actions) será atualizado automaticamente para exibir o próximo passo.
