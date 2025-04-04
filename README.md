@@ -7,9 +7,9 @@
   Add your open source license, GitHub uses MIT license.
 -->
 
-# Secure your repository's supply chain
+# Proteja a cadeia de suprimentos do seu repositório
 
-_Secure your supply chain, understand dependencies in your environment, know about vulnerabilities in those dependencies and patch them._
+_Proteja sua cadeia de suprimentos, entenda as dependências em seu ambiente, saiba sobre vulnerabilidades nessas dependências e corrija-as._
 
 </header>
 
@@ -19,24 +19,24 @@ _Secure your supply chain, understand dependencies in your environment, know abo
   and tell the learner why they should take the course.
 -->
 
-## Welcome
+## Bem-vindo
 
-GitHub helps you secure your supply chain, from understanding the dependencies in your environment, to knowing about vulnerabilities in those dependencies and patching them.
+O GitHub ajuda você a proteger sua cadeia de suprimentos, desde entender as dependências em seu ambiente, até saber sobre vulnerabilidades nessas dependências e corrigi-las.
 
-- **Who this is for**: Developers, DevOps Engineers, Site Reliability Engineers, Security experts
-- **What you'll learn**: How to view repository dependencies, view Dependabot alerts, and enable Dependabot security and version updates
-- **What you'll build**: Repository dependencies, Dependabot alerts, pull requests to fix dependencies and version updates
-- **Prerequisites**: None
-- **Timing**: This course can be completed in under an hour
+- **Para quem é este curso**: Desenvolvedores, Engenheiros DevOps, Engenheiros de Confiabilidade de Sites, especialistas em segurança
+- **O que você aprenderá**: Como visualizar dependências do repositório, visualizar alertas do Dependabot e habilitar atualizações de segurança e versão do Dependabot
+- **O que você construirá**: Dependências do repositório, alertas do Dependabot, pull requests para corrigir dependências e atualizações de versão
+- **Pré-requisitos**: Nenhum
+- **Tempo**: Este curso pode ser concluído em menos de uma hora
 
-In this course, you will explore:
+Neste curso, você explorará:
 
-1. Dependency graph
-2. Dependency alerts
-3. Dependency security updates
-4. Dependency versions updates
+1. Gráfico de dependências
+2. Alertas de dependências
+3. Atualizações de segurança de dependências
+4. Atualizações de versões de dependências
 
-### How to start this course
+### Como iniciar este curso
 
 <!-- For start course, run in JavaScript:
 'https://github.com/new?' + new URLSearchParams({
@@ -51,12 +51,12 @@ In this course, you will explore:
 
 [![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?owner=&template_name=secure-repository-supply-chain&template_owner=skills&name=skills-secure-repository-supply-chain&visibility=public)
 
-1. Right-click **Start course** and open the link in a new tab.
-2. In the new tab, most of the prompts will automatically fill in for you.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
-3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
+1. Clique com o botão direito em **Iniciar curso** e abra o link em uma nova aba.
+2. Na nova aba, a maioria dos prompts será preenchida automaticamente para você.
+   - Para o proprietário, escolha sua conta pessoal ou uma organização para hospedar o repositório.
+   - Recomendamos criar um repositório público, pois repositórios privados [usarão minutos do Actions](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
+   - Role para baixo e clique no botão **Criar repositório** na parte inferior do formulário.
+3. Após a criação do seu novo repositório, espere cerca de 20 segundos e atualize a página. Siga as instruções passo a passo no README do novo repositório.
 
 <footer>
 
