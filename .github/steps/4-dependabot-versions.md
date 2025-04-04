@@ -1,27 +1,27 @@
-## Step 4: Enable and trigger Dependabot version updates
+## Passo 4: Habilitar e acionar atualizações de versão do Dependabot
 
-_Nicely done!_ :partying_face:
+_Muito bem!_ :partying_face:
 
-You now have automated the process for Dependabot to alert you to vulnerabilities with your dependencies and to create pull requests to update them to secure versions! At this point, you only need to review the pull request and then merge it to stay on top of security problems with Dependencies.
+Agora você automatizou o processo para o Dependabot alertá-lo sobre vulnerabilidades em suas dependências e criar pull requests para atualizá-las para versões seguras! Neste ponto, você só precisa revisar o pull request e, em seguida, fazer o merge para ficar em dia com os problemas de segurança das dependências.
 
-The security updates feature helps automate the process to resolve alerts, but what about just keeping up-to-date with version updates? We can also automate pull request generation for updated versions of dependencies using the Dependabot version updates feature.
+O recurso de atualizações de segurança ajuda a automatizar o processo de resolver alertas, mas e quanto a apenas manter-se atualizado com as atualizações de versão? Também podemos automatizar a geração de pull requests para versões atualizadas das dependências usando o recurso de atualizações de versão do Dependabot.
 
-**What are Dependabot version updates?**: In addition to security alerts, Dependabot can also take the effort out of maintaining your dependencies. You can use it to ensure that your repository automatically keeps up with the latest releases of the packages and applications it depends on. Similar to security alerts, Dependabot will identify an outdated dependency and create a pull request to update the manifest to the latest version of the dependency.
+**O que são atualizações de versão do Dependabot?**: Além dos alertas de segurança, o Dependabot também pode tirar o esforço de manter suas dependências. Você pode usá-lo para garantir que seu repositório acompanhe automaticamente os últimos lançamentos dos pacotes e aplicações dos quais depende. Semelhante aos alertas de segurança, o Dependabot identificará uma dependência desatualizada e criará um pull request para atualizar o manifesto para a versão mais recente da dependência.
 
-Let's see how this works!
+Vamos ver como isso funciona!
 
-### :keyboard: Activity 4.1: Enable and trigger Dependabot version updates
+### :keyboard: Atividade 4.1: Habilitar e acionar atualizações de versão do Dependabot
 
-1. Navigate to the **Settings** tab and select **Code security and analysis**.
-1. Locate "Dependabot version updates" and click **Configure** to open a new file editor with pre-poplulated contents. The file is called `dependabot.yml`.
-1. Notice that the file is prepopulated to update the GitHub actions in the repository, the `github-actions` package ecosystem.
-1. Copy the lines that define the GitHub actions updates and append them to the file.
-1. Edit your copy of the content:
-   - Change the `package-ecosystem` to `nuget`.
-   - Change the `directory` to `/code/`.
-   - Change the `interval` to `weekly`.
+1. Navegue até a aba **Configurações** e selecione **Segurança e análise de código**.
+2. Localize "Atualizações de versão do Dependabot" e clique em **Configurar** para abrir um novo editor de arquivos com conteúdo pré-preenchido. O arquivo é chamado `dependabot.yml`.
+3. Observe que o arquivo está pré-preenchido para atualizar as ações do GitHub no repositório, o ecossistema de pacotes `github-actions`.
+4. Copie as linhas que definem as atualizações das ações do GitHub e as adicione ao arquivo.
+5. Edite sua cópia do conteúdo:
+   - Altere o `package-ecosystem` para `nuget`.
+   - Altere o `directory` para `/code/`.
+   - Altere o `interval` para `weekly`.
    
-   The `dependabot.yml` file should now look like this.
+   O arquivo `dependabot.yml` deve agora ficar assim.
    ```yaml
    version: 2
    updates:
@@ -34,10 +34,10 @@ Let's see how this works!
        schedule:
          interval: "weekly"
     ```
-1. Commit your changes directly to the `main` branch.
+6. Faça o commit das suas alterações diretamente na branch `main`.
 
-You have now configured Dependabot version updates to run and check for updates as follows:
-- Check once a month for updates to GitHub Actions and create pull requests to update any that are out of date.
-- Check once a week for updates to .NET packages and create pull requests to update any that are out of date. By default, this check runs on a Monday, to run the check on a different day, see [schedule.day](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#scheduleday).
+Você agora configurou as atualizações de versão do Dependabot para executar e verificar atualizações da seguinte forma:
+- Verificar uma vez por mês por atualizações das ações do GitHub e criar pull requests para atualizar quaisquer que estejam desatualizadas.
+- Verificar uma vez por semana por atualizações de pacotes .NET e criar pull requests para atualizar quaisquer que estejam desatualizadas. Por padrão, essa verificação é executada na segunda-feira. Para executar a verificação em um dia diferente, veja [schedule.day](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#scheduleday).
 
-Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to display the next step.
+Espere cerca de 20 segundos e então atualize esta página (a página onde você está seguindo as instruções). [GitHub Actions](https://docs.github.com/en/actions) será atualizado automaticamente para exibir o próximo passo.
