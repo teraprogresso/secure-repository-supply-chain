@@ -6,7 +6,7 @@ updates:
       interval: "monthly"
 
   - package-ecosystem: "npm"
-    directory: "/" # ou o caminho até o package.json se não estiver na raiz
+    directory: "/code/src/AttendeeSite"
     schedule:
       interval: "daily"
     open-pull-requests-limit: 5
