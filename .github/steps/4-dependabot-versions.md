@@ -12,8 +12,8 @@ Vamos ver como isso funciona!
 
 ### :keyboard: Atividade 4.1: Habilitar e acionar atualizações de versão do Dependabot
 
-1. Navegue até a aba **Configurações** e selecione **Segurança e análise de código**.
-2. Localize "Atualizações de versão do Dependabot" e clique em **Configurar** para abrir um novo editor de arquivos com conteúdo pré-preenchido. O arquivo é chamado `dependabot.yml`.
+1. Navegue até a aba **Settings** e selecione **Advanced Security**.
+2. Localize "Dependabot version updates" e clique em **Configure** para abrir um novo editor de arquivos com conteúdo pré-preenchido. O arquivo é chamado `dependabot.yml`.
 3. Observe que o arquivo está pré-preenchido para atualizar as ações do GitHub no repositório, o ecossistema de pacotes `github-actions`.
 4. Copie as linhas que definem as atualizações das ações do GitHub e as adicione ao arquivo.
 5. Edite sua cópia do conteúdo:
