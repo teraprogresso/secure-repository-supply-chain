@@ -1,6 +1,6 @@
 ## Finalizar
 
-_Parabéns amigo, você completou este curso!_
+_Parabéns, você completou este curso!_
 
 <img src="https://octodex.github.com/images/welcometocat.png" alt=celebrate width=300 align=right>
 
