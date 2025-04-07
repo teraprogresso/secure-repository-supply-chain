@@ -23,12 +23,12 @@ Vamos habilitar alertas do Dependabot em nosso repositório!
 
 ### :keyboard: Atividade 2.2: Habilitar alertas do Dependabot
 
-1. Navegue até a aba **Configurações**.
-2. Exiba as configurações para **Segurança e análise de código**.
-3. **Habilite** alertas do Dependabot.
+1. Navegue até a aba **Settings**.
+2. Exiba as configurações para **Advanced Security**.
+3. Habilite **Dependabot alerts**.
 4. **Aguarde cerca de 60 segundos para o Dependabot verificar se há alertas.**
-5. Navegue até a aba **Segurança**.
-6. Em "Alertas de vulnerabilidade" na barra lateral, selecione **Dependabot** para visualizar uma lista dos alertas do Dependabot para a branch padrão.
+5. Navegue até a aba **Security**.
+6. Em "Vulnerability alerts" na barra lateral, selecione **Dependabot** para visualizar uma lista dos alertas do Dependabot para a branch padrão.
 
 O Dependabot nos alertou sobre vulnerabilidades nas dependências que usamos. Também podemos usar o Dependabot para nos ajudar a resolver essas vulnerabilidades criando pull requests para atualizar a dependência para uma versão segura.
 
@@ -37,10 +37,10 @@ Vamos ver como isso funcionaria usando o Dependabot para criar um pull request p
 ### :keyboard: Atividade 2.3: Criar um pull request com base em um alerta do Dependabot
 
 1. Na lista de alertas do Dependabot, clique em "Prototype Pollution in minimist" para exibir mais informações.
-2. Clique no botão **Criar atualização de segurança do Dependabot** para criar um pull request para atualizar a dependência. Isso pode levar até 2 minutos.
-3. Quando o pull request estiver aberto, a página de alerta será atualizada para mostrar um botão **Revisar atualização de segurança**.
-4. Clique no botão **Revisar atualização de segurança** para exibir o pull request.
-   - Você pode visualizar o pull request e a aba **Arquivos alterados** para revisar a atualização.
-5. Navegue de volta para a aba **Conversação** e faça o merge do pull request.
+2. Clique no botão **Create Dependabot security update** para criar um pull request para atualizar a dependência. Isso pode levar até 2 minutos.
+3. Quando o pull request estiver aberto, a página de alerta será atualizada para mostrar um botão **Review security update**.
+4. Clique no botão **Review security update** para exibir o pull request.
+   - Você pode visualizar o pull request e a aba **Files changed** para revisar a atualização.
+5. Navegue de volta para a aba **Conversation** e faça o merge do pull request.
 
 Espere cerca de 20 segundos e então atualize esta página (a página onde você está seguindo as instruções). [GitHub Actions](https://docs.github.com/en/actions) será atualizado automaticamente para exibir o próximo passo.
