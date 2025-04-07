@@ -4,3 +4,9 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+
+  - package-ecosystem: "npm"
+    directory: "/" # ou o caminho até o package.json se não estiver na raiz
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 5
