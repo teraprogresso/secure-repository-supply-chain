@@ -25,8 +25,8 @@ O GitHub oferece uma série de recursos para ajudá-lo a entender as dependênci
 O gráfico de dependências está habilitado por padrão para todos os novos repositórios públicos. Se você estiver trabalhando em um repositório público, pode ir direto para "Atividade 1.2: Adicionar uma nova dependência e visualizar seu gráfico de dependências".
 
 1. Navegue até a aba **Settings**.
-2. Clique em **Security e Advanced Security**.
-3. **Habilite** "Dependency graph".
+2. Clique em **Advanced Security**.
+3. Habilite **Dependency graph**.
 
 ### :keyboard: Atividade 1.2: Adicionar uma nova dependência e visualizar seu gráfico de dependências
 
