@@ -24,13 +24,13 @@ O GitHub oferece uma série de recursos para ajudá-lo a entender as dependênci
 
 O gráfico de dependências está habilitado por padrão para todos os novos repositórios públicos. Se você estiver trabalhando em um repositório público, pode ir direto para "Atividade 1.2: Adicionar uma nova dependência e visualizar seu gráfico de dependências".
 
-1. Navegue até a aba **Configurações**.
-2. Clique em **Segurança e análise de código**.
-3. **Habilite** "Gráfico de dependências".
+1. Navegue até a aba **Settings**.
+2. Clique em **Security e Advanced Security**.
+3. **Habilite** "Dependency graph".
 
 ### :keyboard: Atividade 1.2: Adicionar uma nova dependência e visualizar seu gráfico de dependências
 
-1. Navegue até a aba **Código** e localize a pasta `code/src/AttendeeSite`.
+1. Navegue até a aba **Code** e localize a pasta `code/src/AttendeeSite`.
 2. Adicione o seguinte conteúdo ao arquivo `package-lock.json` após a terceira chave `}` antes das duas últimas chaves.
     ```
     ,
@@ -41,8 +41,8 @@ O gráfico de dependências está habilitado por padrão para todos os novos rep
      }
     ```
 3. Navegue até a aba **Insights**.
-4. Selecione **Gráfico de dependências** na barra de navegação lateral.
-5. Revise todas as dependências na aba **Dependências**.
+4. Selecione **Dependency graph** na barra de navegação lateral.
+5. Revise todas as dependências na aba **Dependencies**.
 6. Pesquise por `follow-redirects` e revise a nova dependência que você acabou de adicionar.
     ![Captura de tela mostrando a dependência "follow-redirects".](https://user-images.githubusercontent.com/6351798/196288729-734e3319-c5d7-4f35-a19c-676c12f0e27d.png)
 
