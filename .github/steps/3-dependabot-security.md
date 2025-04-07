@@ -10,9 +10,9 @@ Criamos manualmente um pull request para corrigir o alerta "Prototype Pollution 
 
 ### :keyboard: Atividade 3.1: Habilitar e acionar atualizações de segurança do Dependabot
 
-1. Navegue até a aba **Configurações** e selecione **Segurança e análise de código**.
-2. Habilite atualizações de segurança do Dependabot. Pode ser necessário esperar de 30 a 60 segundos antes de ver novos pull requests.
-3. Navegue até a aba **Pull requests** do repositório e selecione o pull request recém-criado que atualiza o axios da versão 0.21.1 para uma versão corrigida.
+1. Navegue até a aba **Settings** e selecione **Advanced Security**.
+2. Habilite **Dependabot security updates**. Pode ser necessário esperar de 30 a 60 segundos antes de ver novos pull requests.
+3. Navegue até a aba **Pull requests** do repositório e selecione o pull request recém-criado.
 4. Revise e faça o merge do pull request.
 
 Espere cerca de 20 segundos e então atualize esta página (a página onde você está seguindo as instruções). [GitHub Actions](https://docs.github.com/en/actions) será atualizado automaticamente para exibir o próximo passo.
